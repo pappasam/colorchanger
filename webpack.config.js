@@ -25,7 +25,14 @@ module.exports = {
       {
         test: /\.jsx?/,
         include: [ PATHES.app, PATHES.test ],
-        loader: 'babel'
+        loader: 'babel',
+        query: {
+          presets: [
+            'es2015',
+            'react',
+            'react-hmre'
+          ]
+        }
       }
     ]
   }
