@@ -7,10 +7,11 @@ const PATHES = {
 }
 
 module.exports = {
-  entry: path.join(PATHES.app, 'app.js'),
+  entry: path.join(PATHES.app, 'index.js'),
   output: {
     filename: 'bundle.js',
-    path: PATHES.build
+    path: PATHES.build,
+    publicPath: '/static/'
   },
   module: {
     preLoaders: [
