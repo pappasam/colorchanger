@@ -1,11 +1,12 @@
 import React from 'react'
-import Box from './Box'
+import AddBox from '../containers/AddBox'
+import ViewBoxList from '../containers/ViewBoxList'
 
 const App = () => (
   <div>
-    <h1>Hello World</h1>
-    <Box color="blue" />
-    <Box color="red" />
+    <h1>Fun Application</h1>
+    <AddBox />
+    <ViewBoxList />
   </div>
 )
 

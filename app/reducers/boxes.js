@@ -24,7 +24,7 @@ const boxes = (state = [], action) => {
         ...state,
         box(undefined, action)
       ]
-    case 'TOGGLE_TODO':
+    case 'TOGGLE_BOX_COLOR':
       return state.map(t =>
         box(t, action)
       )
