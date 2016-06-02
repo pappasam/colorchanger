@@ -6,7 +6,7 @@ This is a simple Javascript application that will help me learn the basics of Re
 
 1. Create blue box when click button that says "Create Box"
 1. Toggle box color between blue and red when clicked
-1. Delete box when X is clicked
+1. Delete box when the delete button is clicked
 
 ## Javascript libraries to explore
 
@@ -22,6 +22,15 @@ This is a simple Javascript application that will help me learn the basics of Re
   * A list of boxes with elements { id, color }
 1. Box
   * A box that keeps track of its { color }
+
+## Running instructions
+
+```bash
+npm install
+npm run start
+```
+
+Navigate to localhost:8080
 
 ## Created by
 
