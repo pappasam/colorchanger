@@ -25,9 +25,11 @@ const boxes = (state = [], action) => {
         box(undefined, action)
       ]
     case 'TOGGLE_BOX_COLOR':
-      return state.map(t =>
-        box(t, action)
+      return state.map(b =>
+        box(b, action)
       )
+    case 'REMOVE_BOX':
+      return state.filter(b => action.id !== b.id)
     default:
       return state
   }

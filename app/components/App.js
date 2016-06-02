@@ -6,6 +6,7 @@ const App = () => (
   <div>
     <h1>Fun Application</h1>
     <AddBox />
+    <h2>See below for boxes!</h2>
     <ViewBoxList />
   </div>
 )

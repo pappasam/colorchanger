@@ -1,18 +1,21 @@
 import React, { PropTypes } from 'react'
 
-const Box = ({ color, onClick }) => {
+const Box = ({ color, onClickDiv, onClickButton }) => {
   const classname = `box ${color}`
   return (
     <div>
-      <div className={classname} onClick={onClick}></div>
-      <p>Box above!</p>
+      <div className={classname} onClick={onClickDiv}>
+        <button onClick={onClickButton}>Remove</button>
+      </div>
+      <p>------------------</p>
     </div>
   )
 }
 
 Box.propTypes = {
   color: PropTypes.string.isRequired,
-  onClick: PropTypes.func.isRequired
+  onClickDiv: PropTypes.func.isRequired,
+  onClickButton: PropTypes.func.isRequired
 }
 
 export default Box

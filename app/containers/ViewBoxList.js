@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import { toggleBoxColor } from '../actions'
+import { toggleBoxColor, removeBox } from '../actions'
 import BoxList from '../components/BoxList'
 
 const mapStateToProps = (state) => {
@@ -12,6 +12,9 @@ const mapDispatchToProps = (dispatch) => {
   return {
     onBoxClick: (id) => {
       dispatch(toggleBoxColor(id))
+    },
+    onButtonClick: (id) => {
+      dispatch(removeBox(id))
     }
   }
 }

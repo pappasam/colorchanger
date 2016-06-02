@@ -13,3 +13,10 @@ export const toggleBoxColor = (id) => {
     id
   }
 }
+
+export const removeBox = (id) => {
+  return {
+    type: 'REMOVE_BOX',
+    id
+  }
+}
